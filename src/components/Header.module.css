@@ -1,0 +1,124 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: #ffffff;
+  border-bottom: 1px solid #ececec;
+}
+
+.inner {
+  width: min(1120px, calc(100% - 2rem));
+  margin-inline: auto;
+  min-height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo {
+  color: #111111;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.menuButton,
+.menuButtonOpen {
+  display: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 1px solid #dddddd;
+  border-radius: 999px;
+  background: #ffffff;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 1.05rem;
+  height: 2px;
+  background: #111111;
+  border-radius: 999px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.menuButtonOpen .bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menuButtonOpen .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menuButtonOpen .bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.link {
+  color: #111111;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  transition: background-color 0.2s ease;
+}
+
+.link:hover {
+  background: #f3f3f3;
+}
+
+@media (max-width: 767px) {
+  .menuButton,
+  .menuButtonOpen {
+    display: inline-flex;
+  }
+
+  .panel,
+  .panelOpen {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: stretch;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    padding-inline: 0.75rem;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+
+  .panelOpen {
+    border-bottom: 1px solid #ececec;
+  }
+
+  .panelOpen .nav {
+    max-height: 18rem;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    padding-block: 0.4rem 0.75rem;
+  }
+
+  .link {
+    padding: 0.75rem 0.6rem;
+  }
+}
