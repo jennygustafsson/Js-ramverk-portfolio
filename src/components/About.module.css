@@ -1,0 +1,30 @@
+.about {
+  width: var(--content);
+  margin: 0 auto;
+  padding: 2rem 0 1rem;
+  scroll-margin-top: 5rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.about h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.about p {
+  margin: 0 0 0.75rem;
+  max-width: 65ch;
+}
+
+.about p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 800px) {
+  .about {
+    grid-template-columns: 0.7fr 1.3fr;
+    gap: 2rem;
+    align-items: start;
+  }
+}

@@ -1,0 +1,38 @@
+.hero {
+  width: var(--content);
+  margin: 0 auto;
+  padding: 3.5rem 0 2rem;
+  scroll-margin-top: 5rem;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #666666;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0.35rem 0 0;
+  font-size: clamp(2.5rem, 7vw, 3.5rem);
+  line-height: 1.05;
+}
+
+.intro {
+  max-width: 36rem;
+  margin: 1rem 0 0;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  min-height: 2.75rem;
+  padding: 0.55rem 1.15rem;
+  border: 1.5px solid #111111;
+  border-radius: 999px;
+  color: #111111;
+  font-weight: 700;
+  text-decoration: none;
+}
