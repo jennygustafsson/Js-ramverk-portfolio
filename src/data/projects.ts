@@ -1,3 +1,7 @@
+export const ALL_TAG = 'Alla'
+
+export const filterTags = [ALL_TAG, 'HTML', 'CSS', 'JavaScript']
+
 export type Project = {
   id: string
   title: string
@@ -7,10 +11,10 @@ export type Project = {
 }
 
 export const projects: Project[] = [
-  { id: 'projekt-1', title: '', tags: [] },
-  { id: 'projekt-2', title: '', tags: [] },
-  { id: 'projekt-3', title: '', tags: [] },
-  { id: 'projekt-4', title: '', tags: [] },
-  { id: 'projekt-5', title: '', tags: [] },
-  { id: 'projekt-6', title: '', tags: [] },
+  { id: 'projekt-1', title: '', tags: ['HTML', 'CSS'] },
+  { id: 'projekt-2', title: '', tags: ['HTML'] },
+  { id: 'projekt-3', title: '', tags: ['CSS'] },
+  { id: 'projekt-4', title: '', tags: ['JavaScript'] },
+  { id: 'projekt-5', title: '', tags: ['CSS', 'JavaScript'] },
+  { id: 'projekt-6', title: '', tags: ['HTML', 'JavaScript'] },
 ]
