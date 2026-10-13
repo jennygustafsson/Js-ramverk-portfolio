@@ -1,0 +1,6 @@
+.card {
+  min-height: 8rem;
+  border: 1px solid #dddddd;
+  border-radius: 16px;
+  background: #ffffff;
+}
