@@ -6,5 +6,20 @@ type ProjectCardProps = {
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
-  return <li className={styles.card} id={project.id} />
+  return (
+    <li className={styles.card} id={project.id}>
+      {project.image && <img src={project.image} alt={project.title} />}
+      {project.title && (
+        <div className={styles.content}>
+          <h3>{project.title}</h3>
+          {project.text && <p>{project.text}</p>}
+          <ul className={styles.tags}>
+            {project.tags.map((tag) => (
+              <li key={tag}>{tag}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </li>
+  )
 }
