@@ -21,18 +21,18 @@
 .active {
   min-height: 2.4rem;
   padding: 0.35rem 0.9rem;
-  border: 1px solid #dddddd;
-  border-radius: 999px;
-  background: #ffffff;
-  color: #111111;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--card);
+  color: var(--ink);
   font: inherit;
   cursor: pointer;
 }
 
 .active {
-  border-color: #111111;
-  background: #111111;
-  color: #ffffff;
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--ink);
 }
 
 .grid {

@@ -2,8 +2,8 @@
   position: sticky;
   top: 0;
   z-index: 20;
-  background: #ffffff;
-  border-bottom: 1px solid #ececec;
+  background: var(--accent);
+  border-bottom: 1px solid var(--accent);
 }
 
 .inner {
@@ -17,7 +17,7 @@
 }
 
 .logo {
-  color: #111111;
+  color: var(--ink);
   font-size: 1.05rem;
   font-weight: 700;
   text-decoration: none;
@@ -29,9 +29,9 @@
   width: 2.75rem;
   height: 2.75rem;
   padding: 0;
-  border: 1px solid #dddddd;
-  border-radius: 999px;
-  background: #ffffff;
+  border: 1px solid var(--ink);
+  border-radius: 4px;
+  background: transparent;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -43,8 +43,8 @@
   display: block;
   width: 1.05rem;
   height: 2px;
-  background: #111111;
-  border-radius: 999px;
+  background: var(--ink);
+  border-radius: 2px;
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
@@ -63,20 +63,20 @@
 .nav {
   display: flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 1.25rem;
 }
 
 .link {
-  color: #111111;
+  color: var(--ink);
   text-decoration: none;
   font-size: 0.95rem;
-  padding: 0.45rem 0.75rem;
-  border-radius: 999px;
-  transition: background-color 0.2s ease;
+  padding: 0.45rem 0.2rem;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
 }
 
 .link:hover {
-  background: #f3f3f3;
+  border-bottom-color: var(--ink);
 }
 
 @media (max-width: 767px) {
@@ -91,7 +91,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    background: #ffffff;
+    background: var(--accent);
   }
 
   .nav {
@@ -107,7 +107,7 @@
   }
 
   .panelOpen {
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid var(--accent);
   }
 
   .panelOpen .nav {
