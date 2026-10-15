@@ -12,12 +12,13 @@ function App() {
       <Header name={name} />
       <main>
         <Hero
-          name={name}
-          intro="Jag studerar webbutveckling och bygger gränssnitt med React och TypeScript."
+          name="Portfolio"
+          intro="Här är projekt jag byggt under utbildningen."
         />
         <About
           paragraphs={[
-            'Jag studerar webbutveckling på medieinstituet och lär mig komponenter, props och state.',
+            'Jag studerar webbutveckling på Medieinstitutet. Där lär jag mig att bygga gränssnitt, och just nu arbetar jag med React, komponenter, props och state.',
+            'På den här sidan samlar jag projekt från utbildningen. De är byggda med HTML, CSS, JavaScript och TypeScript, både egna uppgifter och grupparbeten.',
           ]}
         />
         <Projects />

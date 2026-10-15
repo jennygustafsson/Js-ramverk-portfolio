@@ -8,7 +8,7 @@ type FooterProps = {
 
 export function Footer({ email, githubUrl, linkedinUrl }: FooterProps) {
   const contacts = [
-    { label: email, href: `mailto:${email}` },
+    { label: 'Mail', href: `mailto:${email}` },
     { label: 'GitHub', href: githubUrl },
     { label: 'LinkedIn', href: linkedinUrl },
   ]
