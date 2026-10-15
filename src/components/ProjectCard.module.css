@@ -60,3 +60,14 @@
   background: #efe7d8;
   font-size: 0.8rem;
 }
+
+.repo {
+  color: var(--ink);
+  font-size: 0.85rem;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.repo:hover {
+  border-bottom-color: var(--ink);
+}

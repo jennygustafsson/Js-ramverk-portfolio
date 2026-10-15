@@ -18,6 +18,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
               <li key={tag}>{tag}</li>
             ))}
           </ul>
+          {project.repoUrl && (
+            <a className={styles.repo} href={project.repoUrl}>
+              GitHub
+            </a>
+          )}
         </div>
       )}
     </li>
