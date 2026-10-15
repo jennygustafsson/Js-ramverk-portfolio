@@ -1,6 +1,4 @@
 .projects {
-  width: var(--content);
-  margin: 0 auto;
   padding: 2.5rem 0 4.5rem;
 }
 
@@ -31,15 +29,12 @@
 .active {
   border-color: var(--accent);
   background: var(--accent);
-  color: var(--ink);
 }
 
 .grid {
   display: grid;
   gap: 1rem;
   margin: 1.25rem 0 0;
-  padding: 0;
-  list-style: none;
 }
 
 @media (min-width: 700px) {

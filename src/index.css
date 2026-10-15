@@ -20,6 +20,27 @@ body {
   margin: 0;
 }
 
+.wrap {
+  width: var(--content);
+  margin-inline: auto;
+}
+
+.textLink {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.textLink:hover {
+  border-bottom-color: var(--ink);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;

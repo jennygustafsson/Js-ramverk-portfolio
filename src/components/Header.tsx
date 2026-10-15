@@ -21,7 +21,7 @@ export function Header({ name }: HeaderProps) {
 
   return (
     <header className={styles.header}>
-      <div className={styles.inner}>
+      <div className={`${styles.inner} wrap`}>
         <a className={styles.logo} href="#hem" onClick={closeMenu}>
           {name}
         </a>
@@ -42,7 +42,7 @@ export function Header({ name }: HeaderProps) {
             {links.map((link) => (
               <a
                 key={link.href}
-                className={styles.link}
+                className={`${styles.link} textLink`}
                 href={link.href}
                 onClick={closeMenu}
               >

@@ -1,6 +1,4 @@
 .about {
-  width: var(--content);
-  margin: 0 auto;
   padding: 2rem 0 1rem;
   display: grid;
   gap: 0.75rem;
@@ -14,8 +12,11 @@
 }
 
 .about p {
-  margin: 0 0 0.75rem;
-  max-width: 65ch;
+  margin: 0 0 1.15rem;
+  max-width: 46rem;
+  font-size: 1.125rem;
+  line-height: 1.65;
+  text-wrap: pretty;
 }
 
 .about p:last-child {
@@ -24,8 +25,8 @@
 
 @media (min-width: 800px) {
   .about {
-    grid-template-columns: 0.7fr 1.3fr;
-    gap: 2rem;
+    grid-template-columns: auto 1fr;
+    gap: 3rem;
     align-items: center;
   }
 }

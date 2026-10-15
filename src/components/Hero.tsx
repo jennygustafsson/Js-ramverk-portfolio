@@ -6,7 +6,7 @@ type HeroProps = {
 
 export function Hero({ name }: HeroProps) {
   return (
-    <section id="hem" className={styles.hero}>
+    <section id="hem" className={`${styles.hero} wrap`}>
       <h1>{name}</h1>
     </section>
   )

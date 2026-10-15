@@ -5,11 +5,10 @@ export const filterTags = [ALL_TAG, 'HTML', 'CSS', 'JavaScript', 'TypeScript']
 export type Project = {
   id: string
   title: string
-  image?: string
-  text?: string
+  image: string
+  text: string
   tags: string[]
-  repoUrl?: string
-  demoUrl?: string
+  repoUrl: string
 }
 
 export const projects: Project[] = [

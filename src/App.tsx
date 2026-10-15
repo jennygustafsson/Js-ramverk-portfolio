@@ -11,9 +11,7 @@ function App() {
     <>
       <Header name={name} />
       <main>
-        <Hero
-          name="Om mig"
-        />
+        <Hero name="Om mig" />
         <About
           image="/jenny.jpg"
           paragraphs={[
@@ -27,7 +25,6 @@ function App() {
         email="Gustafssson.Jenny@gmail.com"
         githubUrl="https://github.com/jennygustafsson"
         linkedinUrl="https://www.linkedin.com/in/jenny-gustafsson-780612405/"
-
       />
     </>
   )

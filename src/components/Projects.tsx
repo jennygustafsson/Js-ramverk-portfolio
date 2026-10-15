@@ -12,7 +12,7 @@ export function Projects() {
       : projects.filter((project) => project.tags.includes(activeTag))
 
   return (
-    <section id="projekt" className={styles.projects}>
+    <section id="projekt" className={`${styles.projects} wrap`}>
       <h2>Projekt</h2>
       <div className={styles.filters}>
         {filterTags.map((tag) => (

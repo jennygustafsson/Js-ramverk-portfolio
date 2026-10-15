@@ -2,12 +2,9 @@
   position: relative;
   z-index: 20;
   background: var(--accent);
-  border-bottom: 1px solid var(--accent);
 }
 
 .inner {
-  width: var(--content);
-  margin-inline: auto;
   min-height: 4.5rem;
   display: flex;
   align-items: center;
@@ -66,16 +63,9 @@
 }
 
 .link {
-  color: var(--ink);
-  text-decoration: none;
   font-size: 0.95rem;
   padding: 0.45rem 0.2rem;
-  border-bottom: 2px solid transparent;
   transition: border-color 0.2s ease;
-}
-
-.link:hover {
-  border-bottom-color: var(--ink);
 }
 
 @media (max-width: 767px) {
@@ -103,10 +93,6 @@
     pointer-events: none;
     padding-inline: 0.75rem;
     transition: max-height 0.3s ease, opacity 0.3s ease;
-  }
-
-  .panelOpen {
-    border-bottom: 1px solid var(--accent);
   }
 
   .panelOpen .nav {

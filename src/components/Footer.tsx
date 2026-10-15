@@ -15,12 +15,14 @@ export function Footer({ email, githubUrl, linkedinUrl }: FooterProps) {
 
   return (
     <footer id="kontakt" className={styles.footer}>
-      <div className={styles.inner}>
+      <div className={`${styles.inner} wrap`}>
         <h2>Kontakt</h2>
         <ul className={styles.list}>
           {contacts.map((contact) => (
             <li key={contact.href}>
-              <a href={contact.href}>{contact.label}</a>
+              <a className="textLink" href={contact.href}>
+                {contact.label}
+              </a>
             </li>
           ))}
         </ul>

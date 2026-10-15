@@ -16,9 +16,6 @@
 .card img {
   display: block;
   width: 90%;
-  margin-inline: auto;
-  height: auto;
-  object-fit: contain;
   flex: 0 0 auto;
 }
 
@@ -27,7 +24,6 @@
   flex-direction: column;
   align-items: center;
   gap: 0.4rem;
-  padding: 0;
 }
 
 .content h3,
@@ -48,9 +44,6 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.4rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .tags li {
@@ -61,12 +54,5 @@
 }
 
 .repo {
-  color: var(--ink);
   font-size: 0.85rem;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-}
-
-.repo:hover {
-  border-bottom-color: var(--ink);
 }
