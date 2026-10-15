@@ -6,11 +6,6 @@
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(2.5rem, 7vw, 3.5rem);
+  font-size: clamp(2rem, 5vw, 2.6rem);
   line-height: 1.05;
-}
-
-.intro {
-  max-width: 36rem;
-  margin: 1rem 0 0;
 }

@@ -12,10 +12,10 @@ function App() {
       <Header name={name} />
       <main>
         <Hero
-          name="Portfolio"
-          intro="Här är projekt jag byggt under utbildningen."
+          name="Om mig"
         />
         <About
+          image="/jenny.jpg"
           paragraphs={[
             'Jag studerar webbutveckling på Medieinstitutet. Där lär jag mig att bygga gränssnitt, och just nu arbetar jag med React, komponenter, props och state.',
             'På den här sidan samlar jag projekt från utbildningen. De är byggda med HTML, CSS, JavaScript och TypeScript, både egna uppgifter och grupparbeten.',

@@ -1,13 +1,14 @@
 import styles from './About.module.css'
 
 type AboutProps = {
+  image: string
   paragraphs: string[]
 }
 
-export function About({ paragraphs }: AboutProps) {
+export function About({ image, paragraphs }: AboutProps) {
   return (
     <section id="om" className={styles.about}>
-      <h2>Om mig</h2>
+      <img className={styles.photo} src={image} alt="Jenny Gustafsson" />
       <div>
         {paragraphs.map((paragraph) => (
           <p key={paragraph}>{paragraph}</p>
