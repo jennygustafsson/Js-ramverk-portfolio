@@ -1,10 +1,10 @@
 .projects {
-  padding: 2.5rem 0 4.5rem;
+  padding: 2rem 0 3.5rem;
 }
 
 .projects h2 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.35rem;
 }
 
 .filters {
@@ -16,13 +16,14 @@
 
 .button,
 .active {
-  min-height: 2.4rem;
-  padding: 0.35rem 0.9rem;
+  min-height: 1.9rem;
+  padding: 0.2rem 0.65rem;
   border: 1px solid var(--line);
   border-radius: 4px;
   background: var(--card);
   color: var(--ink);
-  font: inherit;
+  font-family: inherit;
+  font-size: 0.85rem;
   cursor: pointer;
 }
 
